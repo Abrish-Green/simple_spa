@@ -30,7 +30,13 @@ const index = () => {
           <h1 class="text-slate-900 font-extrabold text-4xl md:mx-4 sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">
             <a href="/login">SPA</a>
           </h1>
-          <div className="contact mx-3 right-0">
+          <div className="contact mx-3 right-0 inline-flex gap-2">
+            <a
+              href="/login"
+              className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2  text-white font-semibold py-2 px-4 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400"
+            >
+              Login
+            </a>
             <a
               href="/contact"
               className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2  text-white font-semibold py-2 px-4 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400"

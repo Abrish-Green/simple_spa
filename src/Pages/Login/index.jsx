@@ -5,7 +5,7 @@ const index = () => {
     <>
       <form>
         <div class="text-center w-full h-full">
-          <div className="title font-bold text-4xl md:mx-2 sm:text-4xl lg:text-6xl py-10 text-center dark:text-white">
+          <div className="title font-bold text-3xl md:mx-2 sm:text-2xl lg:text-5xl py-10 text-center dark:text-white">
             Login
           </div>
           <div className="input-section flex items-center justify-center flex-col gap-1">
@@ -14,7 +14,7 @@ const index = () => {
               <input
                 type="text"
                 placeholder="Username"
-                className="border py-1 px-2 border-gray-300 rounded-sm focus:outline"
+                className="border py-1 px-2 border-gray-300 rounded-md focus:outline"
                 required
               />
             </div>
@@ -23,7 +23,7 @@ const index = () => {
               <input
                 type="password"
                 placeHolder="Password"
-                className="border py-1 px-2 border-gray-300 rounded-sm focus:outline"
+                className="border py-1 px-2 border-gray-300 rounded-md focus:outline"
                 required
               />
             </div>
