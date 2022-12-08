@@ -17,7 +17,7 @@ const index = () => {
                 <input
                   type="text"
                   placeholder="Username"
-                  className="border py-1 px-2 border-gray-300 rounded-sm focus:outline"
+                  className="border py-1 px-2 border-gray-300 rounded-md focus:outline"
                   required
                 />
               </div>
@@ -28,7 +28,7 @@ const index = () => {
                 <input
                   type="email"
                   placeholder="Email"
-                  className="border py-1 px-2 border-gray-300 rounded-sm focus:outline"
+                  className="border py-1 px-2 border-gray-300 rounded-md focus:outline"
                   required
                 />
               </div>
@@ -39,7 +39,7 @@ const index = () => {
                 <textarea
                   type="text"
                   placeholder="Message..."
-                  className="border py-1 px-2 border-gray-300 rounded-sm focus:outline"
+                  className="border py-1 px-2 border-gray-300 rounded-md focus:outline"
                   required
                 ></textarea>
               </div>
