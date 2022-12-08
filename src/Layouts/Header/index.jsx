@@ -31,10 +31,9 @@ const index = () => {
             SPA
           </h1>
           <div className="contact mx-3 right-0">
-            <a className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold py-2 px-4 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">
-              {" "}
+            <button className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2  text-white font-semibold py-2 px-4 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">
               Contact us
-            </a>
+            </button>
           </div>
         </nav>
       </header>
