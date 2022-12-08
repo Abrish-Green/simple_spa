@@ -33,13 +33,13 @@ const index = () => {
           <div className="contact mx-3 right-0 inline-flex gap-2">
             <a
               href="/login"
-              className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2  text-white font-semibold py-2 px-4 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400"
+              className="bg-slate-900 text-md hover:bg-slate-700 focus:outline-none focus:ring-2  text-white font-semibold py-1 px-2 md:py-2 md:px-4 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400 text-sm"
             >
               Login
             </a>
             <a
               href="/contact"
-              className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2  text-white font-semibold py-2 px-4 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400"
+              className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2  text-white font-semibold py-2 px-4 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400 text-sm"
             >
               Contact us
             </a>

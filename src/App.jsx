@@ -8,7 +8,7 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Header />}>
-        <Route index path="/login" element={<Login />} />
+        <Route path="/login" index element={<Login />} />
         <Route path="contact" element={<Contact />} />
         <Route path="forgotPassword" element={<ForgotPassword />} />
       </Route>

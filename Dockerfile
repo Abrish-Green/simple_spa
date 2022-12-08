@@ -1,10 +1,14 @@
-FROM node:10
+FROM node:14-alpine
 
-WORKDIR /usr/src/app/spa
+WORKDIR /app
 
-COPY package*.json ./
+COPY package.json ./
 
-RUN npm install
+COPY package-lock.json ./
+
+RUN yarn install --frozen-lockfile
+
+COPY . .
 
 EXPOSE 3000
 
