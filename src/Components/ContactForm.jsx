@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import SnackBar from "./SnackBar";
-import _ from "lodash";
+import { isEmpty } from "../Utils";
 
 const ContactFormSchema = yup
   .object()
@@ -29,7 +29,7 @@ const ContactForm = () => {
     message: null,
   });
   const HandleSubmit = (data) => {
-    if (_.isEmpty(errors)) {
+    if (isEmpty(errors)) {
       setSuccess(true);
       setData(data);
     } else {
@@ -40,10 +40,10 @@ const ContactForm = () => {
 
   return (
     <>
-      {_.isEmpty(errors) && success ? (
+      {isEmpty(errors) && success ? (
         <SnackBar message="Form submitted Successfully" />
       ) : null}
-      {!_.isEmpty(errors) ? <SnackBar error="Invalid Input" /> : null}
+      {!isEmpty(errors) ? <SnackBar error="Invalid Input" /> : null}
 
       <form onSubmit={handleSubmit(HandleSubmit)}>
         <div className="w-full h-full text-center">

@@ -2,8 +2,8 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import _ from "lodash";
 import SnackBar from "./SnackBar";
+import { isEmpty } from "../Utils";
 const ForgotPasswordForm = () => {
   const ResetPasswordFormSchema = yup
     .object()
@@ -25,7 +25,7 @@ const ForgotPasswordForm = () => {
     email: null,
   });
   const HandlePasswordReset = (data) => {
-    if (_.isEmpty(errors)) {
+    if (isEmpty(errors)) {
       setSuccess(true);
       setData(data);
     } else {
@@ -36,10 +36,10 @@ const ForgotPasswordForm = () => {
 
   return (
     <>
-      {_.isEmpty(errors) && success ? (
+      {isEmpty(errors) && success ? (
         <SnackBar message="Resetting Email Found" />
       ) : null}
-      {!_.isEmpty(errors) ? (
+      {!isEmpty(errors) ? (
         <SnackBar error={errors.email ? errors.email.message : ""} />
       ) : null}
       <form onSubmit={handleSubmit(HandlePasswordReset)}>
