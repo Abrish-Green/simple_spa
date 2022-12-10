@@ -1,9 +1,10 @@
 import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-const index = () => {
+const Index = () => {
   const Navigate = useNavigate();
   const Location = useLocation();
+
   React.useEffect(() => {
     if (Location.pathname === "/") {
       Navigate("/login");
@@ -60,4 +61,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

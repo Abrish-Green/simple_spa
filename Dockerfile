@@ -8,6 +8,8 @@ COPY package-lock.json ./
 
 COPY . .
 
-EXPOSE 3000
+RUN npm install && npm update
 
-CMD ["npm", "run", "build"]
+CMD npm start
+
+EXPOSE 3000
