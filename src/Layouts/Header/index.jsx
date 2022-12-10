@@ -5,17 +5,17 @@ const index = () => {
   return (
     <>
       <header>
-        <nav class="navbar navbar-expand-lg shadow-md w-full py-2 bg-white flex justify-between items-center">
+        <nav className="navbar navbar-expand-lg shadow-md w-full py-2 bg-white flex justify-between items-center">
           <div className="small-screen justify-end mx-4 md:hidden">
             <button
-              class="navbar-toggler border-0 py-3 lg:hidden leading-none text-xl bg-transparent text-gray-600 hover:text-gray-700 focus:text-gray-700 transition-shadow duration-150 ease-in-out mr-2"
+              className="navbar-toggler border-0 py-3 lg:hidden leading-none text-xl bg-transparent text-gray-600 hover:text-gray-700 focus:text-gray-700 transition-shadow duration-150 ease-in-out mr-2"
               type="button"
             >
               <svg
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
-                class="w-5"
+                className="w-5"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
@@ -27,7 +27,7 @@ const index = () => {
               </svg>
             </button>
           </div>
-          <h1 class="text-slate-900 font-extrabold text-4xl md:mx-4 sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">
+          <h1 className="text-slate-900 font-extrabold text-4xl md:mx-4 sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">
             <a href="/login">SPA</a>
           </h1>
           <div className="contact mx-3 right-0 inline-flex gap-2">

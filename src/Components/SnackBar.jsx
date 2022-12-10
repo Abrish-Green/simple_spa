@@ -13,11 +13,11 @@ const SnackBar = ({ message = "", error = "" }) => {
         <div className="text-4xl icon">
           {!error ? <AiFillCheckCircle /> : <AiFillCloseCircle />}
         </div>
-        <div className="message"> {message ? message : "Default Message"}</div>
+        <div className="message"> {message ? message : error}</div>
         <div className="close">
           <button
-            onClick={() => setOpen(!open)}
-            className="w-full p-1.5 border border-gray-400 rounded-full hover:border-black hover:border-2"
+            onClick={() => setOpen(false)}
+            className="w-full p-1.5 rounded-full hover:border-black hover:border focus:border-2"
           >
             <GrClose />
           </button>
