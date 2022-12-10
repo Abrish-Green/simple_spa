@@ -6,5 +6,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `docker-compose build` or
+### `docker-compose build`,if you are getting any warning's please try to build the image first
 ### `docker-compose up`
