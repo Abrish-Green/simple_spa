@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login";
 import Contact from "./Pages/Contact";
 import ForgotPassword from "./Pages/ForgotPassword";
-import Header from "./Layouts/Header/Index";
+import Header from "./Layouts/Header";
 const App = () => {
   return (
     <Routes>
