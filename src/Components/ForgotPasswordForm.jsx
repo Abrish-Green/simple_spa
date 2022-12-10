@@ -34,8 +34,6 @@ const ForgotPasswordForm = () => {
     return data;
   };
 
-  console.log(errors.email);
-
   return (
     <>
       {_.isEmpty(errors) && success ? (

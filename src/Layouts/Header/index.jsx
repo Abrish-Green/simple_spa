@@ -1,7 +1,14 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
-
+import { Outlet, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const index = () => {
+  const Navigate = useNavigate();
+  const Location = useLocation();
+  React.useEffect(() => {
+    if (Location.pathname === "/") {
+      Navigate("/login");
+    }
+  }, []);
   return (
     <>
       <header>
@@ -28,7 +35,7 @@ const index = () => {
             </button>
           </div>
           <h1 className="text-slate-900 font-extrabold text-4xl md:mx-4 sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">
-            <a href="/login">SPA</a>
+            <a href="/">SPA</a>
           </h1>
           <div className="contact mx-3 right-0 inline-flex gap-2">
             <a
