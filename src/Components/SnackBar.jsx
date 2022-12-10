@@ -13,7 +13,7 @@ const SnackBar = ({ message = "", error = "" }) => {
         <div className="text-4xl icon">
           {!error ? <AiFillCheckCircle /> : <AiFillCloseCircle />}
         </div>
-        <div className="message"> {message ? message : error}</div>
+        <div className="message capitalize"> {message ? message : error}</div>
         <div className="close">
           <button
             onClick={() => setOpen(false)}
